@@ -8,7 +8,7 @@ apt install jq -y
 apt install git -y
 #apt install sudo 
 
-if [ "$(which curl)" != "" ]
+if [ "$(which curl)" != "" -a "$(which jq)" != "" -a "$(which git)" != ""  -a  "$(which curl)" != ""]
 then
 echo "Tienes instalado curl"
 else
