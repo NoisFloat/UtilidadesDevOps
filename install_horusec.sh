@@ -6,9 +6,12 @@ apt-get update -y
 apt install curl -y
 apt install jq -y
 apt install git -y
+
+echo "\n\n\n\n"
+
 #apt install sudo 
 
-if [ "$(which curl)" != "" -a "$(which jq)" != "" -a "$(which git)" != ""  -a  "$(which curl)" != ""]
+if [ "$(which curl)" != "" -a "$(which jq)" != "" -a "$(which git)" != "" -a "$(which curl)" != ""];
 then
 echo "Tienes instaladas todas las dependencias"
 else
