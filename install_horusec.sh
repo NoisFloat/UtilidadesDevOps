@@ -7,13 +7,16 @@ apt install curl -y
 apt install jq -y
 apt install git -y
 
-echo "\n\n\n\n"
+printf "\n\n\n\n"
 
 #apt install sudo 
 
-if [ "$(which curl)" != "" -a "$(which jq)" != "" -a "$(which git)" != "" -a "$(which curl)" != ""];
-then
-echo "Tienes instaladas todas las dependencias"
-else
-echo "Ocurrio un error en la instalacion de dependencias"
-fi
+#Conditional to determinate the installation of horusec
+
+isInstalledCurl=$(which curl) != ""
+isInstalledJq=$(which jq) != ""
+isInstalledGit=$(which git) !=""
+
+echo $isInstalledCurl
+echo $isInstalledJq
+echo $isInstalledGit
