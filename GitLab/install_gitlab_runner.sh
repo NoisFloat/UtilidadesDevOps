@@ -23,4 +23,5 @@ echo "Iniciando GitLab Runner..."
 sudo gitlab-runner start
 
 
+
 echo "GitLab Runner ha sido registrado correctamente."
