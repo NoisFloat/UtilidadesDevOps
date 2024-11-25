@@ -10,7 +10,7 @@ apt install git -y
 
 if [ "$(which curl)" != "" -a "$(which jq)" != "" -a "$(which git)" != ""  -a  "$(which curl)" != ""]
 then
-echo "Tienes instalado curl"
+echo "Tienes instaladas todas las dependencias"
 else
 echo "Ocurrio un error en la instalacion de dependencias"
 fi
