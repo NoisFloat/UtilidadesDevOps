@@ -13,9 +13,26 @@ printf "\n\n\n\n"
 
 #Conditional to determinate the installation of horusec
 
-isInstalledCurl=$(which curl) != ""
-isInstalledJq=$(which jq) != ""
-isInstalledGit=$(which git) !=""
+if which curl > /dev/null 2>&1; then
+    isInstalledCurl=true
+else
+    isInstalledCurl=false
+fi
+
+
+if which curl > /dev/null 2>&1; then
+    isInstalledJq=true
+else
+    isInstalledJq=false
+fi
+
+
+if which curl > /dev/null 2>&1; then
+    isInstalledGit=true
+else
+    isInstalledGit=false
+fi
+
 
 echo $isInstalledCurl
 echo $isInstalledJq
