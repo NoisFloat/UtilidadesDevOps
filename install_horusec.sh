@@ -37,3 +37,12 @@ fi
 echo $isInstalledCurl
 echo $isInstalledJq
 echo $isInstalledGit
+
+
+printf "\n\n\n\n"
+
+if [ "$isInstalledCurl" = true ] && [ "$isInstalledJq" = true ] && [ "$isInstalledGit" = true ] && [ "$var4" = true ]; then
+    echo "Todas las variables son verdaderas."
+else
+    echo "No todas las variables son verdaderas."
+fi
